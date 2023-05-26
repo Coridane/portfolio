@@ -5,7 +5,7 @@ This portfolio contains a section about me, a section with my work including my 
 
 The following animation shows the web application's appearance and functionality:
 
-![portfolio demo](./assets/images/mock.png)
+![portfolio demo](./assets/images/mock2.png)
 
 ## Link
 
