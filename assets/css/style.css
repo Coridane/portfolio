@@ -1,0 +1,245 @@
+* {    
+    /* box-sizing: border-box;
+       padding: 0; */
+    margin: 0;     
+}
+
+/* Background color, font family, and font color for 
+everything in the body unless defined differently. */
+body {
+    background-color: #0077DA;    
+    font-family: sans-serif;
+    color: #ffffff;
+}
+
+/* The spacing and background color for the header area at 
+the top. */
+.header {
+    padding: 0px;    
+    background-color: #0077DA;
+    
+}
+
+/* The block type and height of the logo image. */
+.header img {
+    display: inline-block;
+    height: 100px;
+}
+
+/* The spacing and alignment of the nav area at the top. */
+.header nav {
+    padding-top: 15px;
+    margin-right: 20px;
+    float: right;    
+}
+
+/* The font family, size, color, removal of underline,
+alignment, and highlight effect DURING transition of the 
+nav area at the top. */
+
+nav a {
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    font-size: 20px;  
+    color: #ffffff;
+    text-decoration: none;
+    margin-left: 25px;    
+    box-shadow: inset 0 0 0 0 #54b3d6;    
+    transition: color .3s ease-in-out, box-shadow .3s ease-in-out;
+}
+
+/* The highlight effect after the transition, but while 
+still hovering over a link in the nav area. */
+nav a:hover {            
+    color:white;    
+    box-shadow: inset 200px 0 0 0 #54b3d6;
+}
+
+/* The width, height, and spacing of elements in the main area.
+area. */
+
+main {
+    width: 90%;    
+    /* margin-bottom: 3000px; */    
+    height: 3000px;
+    padding: 30px;    
+}
+
+main a {
+    font-size: 15px;  
+    color: #ffffff;    
+}
+
+main a:active {
+    font-size: 15px;  
+    color: #ffffff;    
+}
+
+main a:visited {
+    font-size: 15px;  
+    color: #ffffff;    
+}
+
+/* The alignment and height of the about photo. */
+#about img {
+    float: left;
+    margin-right: 25px;
+    height: 225px    
+}
+
+/* Font size and color of section headings. */
+main h1 {        
+    font-size: 50px;
+    color: limegreen;
+}
+
+/* The big quote. */
+blockquote {
+    text-align: right;
+    font-family: Georgia, serif;
+    font-size: 48px;
+    font-style: italic;
+    width: 1100px;    
+    line-height: 1;
+    position: relative;
+    color: white;
+}
+
+/* The big quotation mark before the quote. */
+blockquote:before {
+    display: block;
+    padding-left: 215px;
+    content: "\201C";
+    font-size: 180px;
+    position: absolute;
+    left: -20px;
+    top: -20px;
+    color: white;
+}
+
+/* Size of first project image and placement of heading overlay. */
+  #firstproject {
+    display: grid;
+    grid-template: "container";
+    place-items: center;
+    place-content: center;
+    overflow: hidden;
+    max-height: clamp(450px, 50vh, 600px);
+  }
+  
+/* Grid area of first project image. */
+  #firstproject > * {
+    grid-area: container;
+    
+  }
+
+/* Font size and color for heading overlay link */
+   #firstproject a {
+    font-size: 20px;  
+    color: #ffffff;
+    text-decoration: none;
+   }   
+
+/* Font size and color for heading overlay visited link */
+   #firstproject a:visted {
+    font-size: 20px;  
+    color: #ffffff;
+    text-decoration: none;
+   }   
+
+/* Font size and color for heading overlay active link */
+   #firstproject a:active {
+    font-size: 20px;  
+    color: #ffffff;
+    text-decoration: none;
+   }   
+
+/* Position, z-index, and font rules for first project image. */
+  #horiseon {
+    position: relative;
+    z-index: 0;
+    font-family: sans-serif;
+    font-size: clamp(1rem, 5vw, 3rem);
+    padding: 0.5rem;
+    text-align: center;  
+    height: auto;
+    width: 100%;
+    }
+
+    /* Size of other project image and placement of heading overlay. */
+    .otherprojects {
+        display: grid;
+        grid-template: "container";
+        place-items: center;
+        place-content: center;
+        overflow: hidden;
+        max-height: clamp(250px, 25vh, 30px);
+      }
+      
+      /* Grid area of other project image. */
+      .otherprojects > * {
+        grid-area: container;        
+      }
+    
+      /* Font size and color for other project heading overlay link. */
+      .otherprojects a {
+        font-size: 20px;  
+        color: #ffffff;
+        text-decoration: none;
+       }   
+    
+       /* Font size and color for other project heading overlay visited link. */
+       .otherprojects a:visted {
+        font-size: 20px;  
+        color: #ffffff;
+        text-decoration: none;
+       }
+       
+       /* Font size and color for other project heading overlay active link. */
+       .otherprojects a:active {
+        font-size: 20px;  
+        color: #ffffff;
+        text-decoration: none;
+       }   
+    
+       /* Position, z-index, and font rules for other project image. */
+      .other {
+        position: relative;
+        z-index: 0;
+        font-family: sans-serif;
+        font-size: clamp(1rem, 5vw, 3rem);
+        padding: 0.5rem;
+        text-align: center;         
+        }
+         
+        /* Size and position of contact form. */
+        input[type=text], select, textarea {
+            width: 100%;
+            padding: 12px;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border-box;
+            margin-top: 6px;
+            margin-bottom: 16px;
+            resize: vertical
+        }
+        
+        /* Settings for contact form button. */
+        input[type=submit] {
+            background-color: #1403ff;
+            color: white;
+            padding: 12px 20px;
+            border: none;
+            border-radius: 4px;
+            cursor: pointer;
+        }
+        
+        /* Color when hovering over the contact form button. */
+        input[type=submit]:hover {
+            background-color: #12e0fc;
+        }
+        
+        /* Position of contact form. */
+        .contact {
+            border-radius: 5px;    
+            padding: 20px;
+        }
