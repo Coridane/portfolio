@@ -5,7 +5,7 @@
 /* Background color, font family, and font color for 
 everything in the body unless defined differently. */
 body {
-    background-color: #496BE0;    
+    background-color: #3A6ADF;    
     font-family: sans-serif;
     color: #ffffff;
 }
@@ -14,8 +14,7 @@ body {
 the top. */
 .header {
     padding: 0px;    
-    background-color: #3A6ADF;
-    
+    background-color: #3A6ADF;    
 }
 
 /* The block type and height of the logo image. */
