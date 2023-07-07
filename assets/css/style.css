@@ -5,7 +5,7 @@
 /* Background color, font family, and font color for 
 everything in the body unless defined differently. */
 body {
-    background-color: #0077DA;    
+    background-color: #496BE0;    
     font-family: sans-serif;
     color: #ffffff;
 }
@@ -14,7 +14,7 @@ body {
 the top. */
 .header {
     padding: 0px;    
-    background-color: #0077DA;
+    background-color: #496BE0;
     
 }
 
@@ -22,6 +22,7 @@ the top. */
 .header img {
     display: inline-block;
     height: 100px;
+    width: 600px;
 }
 
 /* The spacing and alignment of the nav area at the top. */
@@ -56,10 +57,10 @@ nav a:hover {
 area. */
 
 main {
-    width: 90%;    
+    width: 90%;
     /* margin-bottom: 3000px; */    
     height: 1800px;
-    padding: 30px;    
+    padding: 30px;
 }
 
 main a {
@@ -151,93 +152,45 @@ blockquote:before {
     text-decoration: none;
    }   
 
-/* Position, z-index, and font rules for first project image. */
-  #horiseon {
-    position: relative;
-    z-index: 0;
-    font-family: sans-serif;
-    font-size: clamp(1rem, 5vw, 3rem);
-    padding: 0.5rem;
-    text-align: center;  
-    height: auto;
+#trav {
     width: 100%;
-    }
+}
 
-    /* Size of other project image and placement of heading overlay. */
-    .otherprojects {
-        display: grid;
-        grid-template: "container";
-        place-items: center;
-        place-content: center;
-        overflow: hidden;
-        max-height: clamp(250px, 25vh, 30px);
-      }
-      
-      /* Grid area of other project image. */
-      .otherprojects > * {
-        grid-area: container;        
-      }
-    
-      /* Font size and color for other project heading overlay link. */
-      .otherprojects a {
-        font-size: 20px;  
-        color: #ffffff;
-        text-decoration: none;
-       }   
-    
-       /* Font size and color for other project heading overlay visited link. */
-       .otherprojects a:visted {
-        font-size: 20px;  
-        color: #ffffff;
-        text-decoration: none;
-       }
-       
-       /* Font size and color for other project heading overlay active link. */
-       .otherprojects a:active {
-        font-size: 20px;  
-        color: #ffffff;
-        text-decoration: none;
-       }   
-    
-       /* Position, z-index, and font rules for other project image. */
-      .other {
-        position: relative;
-        z-index: 0;
-        font-family: sans-serif;
-        font-size: clamp(1rem, 5vw, 3rem);
-        padding: 0.5rem;
-        text-align: center;         
-        }
-         
-        /* Size and position of contact form. */
-        input[type=text], select, textarea {
-            width: 100%;
-            padding: 12px;
-            border: 1px solid #ccc;
-            border-radius: 4px;
-            box-sizing: border-box;
-            margin-top: 6px;
-            margin-bottom: 16px;
-            resize: vertical
-        }
-        
-        /* Settings for contact form button. */
-        input[type=submit] {
-            background-color: #1403ff;
-            color: white;
-            padding: 12px 20px;
-            border: none;
-            border-radius: 4px;
-            cursor: pointer;
-        }
-        
-        /* Color when hovering over the contact form button. */
-        input[type=submit]:hover {
-            background-color: #12e0fc;
-        }
-        
-        /* Position of contact form. */
-        .contact {
-            border-radius: 5px;    
-            padding: 20px;
-        }
+#other {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Size and position of contact form. */
+input[type=text], select, textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+    margin-top: 6px;
+    margin-bottom: 16px;
+    resize: vertical
+}
+
+/* Settings for contact form button. */
+input[type=submit] {
+    background-color: #1403ff;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+/* Color when hovering over the contact form button. */
+input[type=submit]:hover {
+    background-color: #12e0fc;
+}
+
+/* Position of contact form. */
+.contact {
+    border-radius: 5px;    
+    padding: 20px;
+}
